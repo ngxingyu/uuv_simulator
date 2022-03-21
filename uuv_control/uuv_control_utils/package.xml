@@ -21,7 +21,8 @@
   <exec_depend>geometry_msgs</exec_depend>
   <exec_depend>uuv_world_ros_plugins_msgs</exec_depend>
   <exec_depend>uuv_gazebo_ros_plugins_msgs</exec_depend>
-  <exec_depend>python-numpy</exec_depend>
+  <exec_depend condition="$ROS_PYTHON_VERSION == 2">python-numpy</exec_depend>
+  <exec_depend condition="$ROS_PYTHON_VERSION == 3">python3-numpy</exec_depend>
   <exec_depend>uuv_control_msgs</exec_depend>
   <exec_depend>std_msgs</exec_depend>
   <exec_depend condition="$ROS_PYTHON_VERSION == 2">python-yaml</exec_depend>
